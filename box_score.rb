@@ -24,6 +24,7 @@ def get_players_from_game(gameId)
     id = id[0] unless id.nil?
     line = p.inner_html.split("<\/td>")      
     points = line[-2].match(/[0-9]+/)
+    points = points[0] unless points.nil?
     scores << Score.new(id, gameId, points)
   }
   scores.each { |score| puts score.inspect }
@@ -104,7 +105,7 @@ def all_players()
   puts players.length
 end
 
-get_players_from_game('201101220287')
+get_players_from_game('201102010657')
 #get_players_for_team("kaa", "Kansas Jayhawks")
 #get_all_teams()
 #all_players()
