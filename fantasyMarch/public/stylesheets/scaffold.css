@@ -54,3 +54,53 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+.player {
+  position: relative;
+  list-style:none;
+}
+
+.player-points{
+  list-style: none;
+  position: absolute;
+  left: 150px;
+  top: 0px;
+}
+
+.player-points li{
+  display: inline;
+}
+
+.player-total{
+  position: absolute;
+  left: 250px;
+  top: 0px;
+}
+
+.team {
+  position:relative;
+  list-style: none;
+}
+
+.team li{
+  display: inline;
+  font-size: 18px;
+}
+
+.team-total {
+  position: absolute;
+  left: 440px;
+  top: 0px;
+}
+
+.team-title{
+}
+
+.teams {
+  display:inline;
+  list-style: none;
+}
+
+.teams >li{
+  padding: 10px;
+}

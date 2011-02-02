@@ -1,19 +1,29 @@
 <h1>Fantasy March Madness 2011 Standings</h1>
-<ul>
+<ul class='teams'>
   <% @teams.sort.each do |team| %>
     <li>
-    <%= team.name %>
-    <%= team.total %>
+    <ul class='team'>
+      <li class='team-title'>
+      <%= team.name %>
+      </li>
+      <li class='team-total'>
+      <%= team.total %>
+      </li>
+    </ul>
     <ul>
       <% team.players.sort.each do |player| %>
-        <li>
+        <li class='player'>
         <%= player.name %>
-        <% player.games.each do |game| %>
-          <%= game.points %>
-        <% end %>
-        <b>
-          <%= player.total %>
-        </b>
+        <ul class='player-points'>
+          <% player.games.each do |game| %>
+            <li>
+            <%= game.points %>
+            </li>
+          <% end %>
+          <li class='player-total'>
+            <%= player.total %>
+          </li>
+        </ul>
         </li>
       <% end %>
     </ul>
