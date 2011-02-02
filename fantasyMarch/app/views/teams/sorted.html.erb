@@ -1,0 +1,22 @@
+<h1>Fantasy March Madness 2011 Standings</h1>
+<ul>
+  <% @teams.sort.each do |team| %>
+    <li>
+    <%= team.name %>
+    <%= team.total %>
+    <ul>
+      <% team.players.sort.each do |player| %>
+        <li>
+        <%= player.name %>
+        <% player.games.each do |game| %>
+          <%= game.points %>
+        <% end %>
+        <b>
+          <%= player.total %>
+        </b>
+        </li>
+      <% end %>
+    </ul>
+    </li>
+  <% end %>
+</ul>

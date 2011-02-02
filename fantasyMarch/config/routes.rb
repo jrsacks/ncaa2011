@@ -1,4 +1,10 @@
 FantasyMarch::Application.routes.draw do
+  root :to => 'teams#sorted'
+  resources :teams
+
+  match 'players/team/:teamAbbrev' => 'players#team'
+  resources :players
+
   match 'scores/game/:gameId' => 'scores#game'
   resources :scores
 

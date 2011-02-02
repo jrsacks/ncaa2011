@@ -43,12 +43,16 @@ class Player
   end
 end
 
-def get_players_for_team(team, teamname)
+def get_players_for_team(team)
   stringIo = open("http://rivals.yahoo.com/ncaa/basketball/teams/#{team}/roster")
   html = stringIo.read
 
   players = []
+  teamname = ''
   html.each do |line|
+    if line.match(/<title>/)
+      teamname =  (Hpricot(line)/"title").inner_html.split(' -')[0]
+    end
     if line.match(/\/ncaab\/players\/[0-9]+/) 
       id = line.match(/[0-9]+/)
       fullname = (Hpricot(line)/"a").inner_html.split(', ').reverse.join(' ')
@@ -56,7 +60,7 @@ def get_players_for_team(team, teamname)
     end
   end
 
-  players
+  players.each { |player| puts player.to_s}
 end
 
 class Team
@@ -105,7 +109,7 @@ def all_players()
   puts players.length
 end
 
-get_players_from_game('201102010657')
-#get_players_for_team("kaa", "Kansas Jayhawks")
+#get_players_from_game('201102010657')
+get_players_for_team("kaa")#, "Kansas Jayhawks")
 #get_all_teams()
 #all_players()
