@@ -71,15 +71,22 @@ div.field, div.actions {
   display: inline;
 }
 
+.player-point {
+  float:left;
+  width: 25px;
+  text-align: right;
+}
+
 .player-total{
   position: absolute;
-  left: 250px;
+  left: 300px;
   top: 0px;
 }
 
 .team {
   position:relative;
   list-style: none;
+  padding-bottom: 5px;
 }
 
 .team li{
@@ -89,7 +96,7 @@ div.field, div.actions {
 
 .team-total {
   position: absolute;
-  left: 440px;
+  left: 490px;
   top: 0px;
 }
 
