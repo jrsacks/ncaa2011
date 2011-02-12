@@ -25,6 +25,7 @@ class TeamsController < ApplicationController
   # GET /teams/new.xml
   def new
     @team = Team.new
+    @players = Player.all(:select => "name,team,playerId").map{|player| "\"#{player.team}: #{player.name} #{player.playerId}\""}
 
     respond_to do |format|
       format.html # new.html.erb

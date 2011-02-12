@@ -111,3 +111,11 @@ div.field, div.actions {
 .teams >li{
   padding: 10px;
 }
+
+#new_team label{
+  width: 200px;
+}
+ 
+.autocomplete {
+  width: 400px;
+}
