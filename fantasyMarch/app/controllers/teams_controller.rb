@@ -25,7 +25,7 @@ class TeamsController < ApplicationController
   # GET /teams/new.xml
   def new
     @team = Team.new
-    @players = Player.all(:select => "name,team,playerId").map{|player| "\"#{player.team}: #{player.name} #{player.playerId}\""}
+    @players = Player.all(:select => "name,team,playerId").map{|player| "\"#{player.name} (#{player.team}) #{player.playerId}\""}
 
     respond_to do |format|
       format.html # new.html.erb
@@ -44,12 +44,14 @@ class TeamsController < ApplicationController
   # GET /teams/1/edit
   def edit
     @team = Team.find(params[:id])
+    @players = Player.all(:select => "name,team,playerId").map{|player| "\"#{player.name} (#{player.team}) #{player.playerId}\""}
   end
 
   # POST /teams
   # POST /teams.xml
   def create
     @team = Team.new(params[:team])
+    @players = Player.all(:select => "name,team,playerId").map{|player| "\"#{player.name} (#{player.team}) #{player.playerId}\""}
 
     respond_to do |format|
       if @team.save
@@ -66,6 +68,7 @@ class TeamsController < ApplicationController
   # PUT /teams/1.xml
   def update
     @team = Team.find(params[:id])
+    @players = Player.all(:select => "name,team,playerId").map{|player| "\"#{player.name} (#{player.team}) #{player.playerId}\""}
 
     respond_to do |format|
       if @team.update_attributes(params[:team])

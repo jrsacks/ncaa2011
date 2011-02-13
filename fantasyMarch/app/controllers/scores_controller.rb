@@ -35,7 +35,7 @@ class ScoresController < ApplicationController
   def game
     Game.new.load params[:gameId]
 
-    @scores = Score.all 
+    @scores = Score.find(:all, :conditions => {:gameId => params[:gameId]})
     render :index
   end
 
