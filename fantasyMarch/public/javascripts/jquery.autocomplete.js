@@ -503,49 +503,50 @@ $.Autocompleter.Cache = function(options) {
 		add: add,
 		populate: populate,
 		load: function(q) {
-			if (!options.cacheLength || !length)
-				return null;
-			/* 
-			 * if dealing w/local data and matchContains than we must make sure
-			 * to loop through all the data collections looking for matches
-			 */
-			if( !options.url && options.matchContains ){
-				// track all matches
-				var csub = [];
-				// loop through all the data grids for matches
-				for( var k in data ){
-					// don't search through the stMatchSets[""] (minChars: 0) cache
-					// this prevents duplicates
-					if( k.length > 0 ){
-						var c = data[k];
-						$.each(c, function(i, x) {
-							// if we've got a match, add it to the array
-							if (matchSubset(x.value, q)) {
-								csub.push(x);
-							}
-						});
-					}
-				}				
-				return csub;
-			} else 
-			// if the exact item exists, use it
-			if (data[q]){
-				return data[q];
-			} else
-			if (options.matchSubset) {
-				for (var i = q.length - 1; i >= options.minChars; i--) {
-					var c = data[q.substr(0, i)];
-					if (c) {
-						var csub = [];
-						$.each(c, function(i, x) {
-							if (matchSubset(x.value, q)) {
-								csub[csub.length] = x;
-							}
-						});
-						return csub;
-					}
-				}
-			}
+                  if (!options.cacheLength || !length)
+                    return null;
+                  /* 
+                  * if dealing w/local data and matchContains than we must make sure
+                  * to loop through all the data collections looking for matches
+                  */
+
+                  if( !options.url && options.matchContains ){
+                    // track all matches
+                    var csub = [];
+                    // loop through all the data grids for matches
+                    for( var k in data ){
+                      // don't search through the stMatchSets[""] (minChars: 0) cache
+                      // this prevents duplicates
+                      if( k.length > 0 ){
+                        var c = data[k];
+                        $.each(c, function(i, x) {
+                          // if we've got a match, add it to the array
+                          if (matchSubset(x.value, q)) {
+                            csub.push(x);
+                          }
+                        });
+                      }
+                    }				
+                    return csub;
+                  } else 
+                    // if the exact item exists, use it
+                    if (data[q]){
+                      return data[q];
+                    } else
+                      if (options.matchSubset) {
+                        for (var i = q.length - 1; i >= options.minChars; i--) {
+                          var c = data[q.substr(0, i)];
+                          if (c) {
+                            var csub = [];
+                            $.each(c, function(i, x) {
+                              if (matchSubset(x.value, q)) {
+                                csub[csub.length] = x;
+                              }
+                            });
+                            return csub;
+                          }
+                        }
+                      }
 			return null;
 		}
 	};
