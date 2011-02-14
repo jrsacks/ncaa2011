@@ -39,6 +39,9 @@ $.fn.extend({
 	search: function(handler) {
 		return this.trigger("search", [handler]);
 	},
+	initSearch: function(handler) {
+		return this.trigger("initSearch", [handler]);
+	},
 	flushCache: function() {
 		return this.trigger("flushCache");
 	},
@@ -170,21 +173,30 @@ $.Autocompleter = function(input, options) {
 		var fn = (arguments.length > 1) ? arguments[1] : null;
 		function findValueCallback(q, data) {
 			var result;
-			if( data && data.length ) {
-				for (var i=0; i < data.length; i++) {
-					if( data[i].result.toLowerCase() == q.toLowerCase() ) {
-						result = data[i];
-						break;
-					}
-				}
-			}
+                        if( data && data.length ) {
+                          for (var i=0; i < data.length; i++) {
+                            if( data[i].result.toLowerCase() == q.toLowerCase() ) {
+                              result = data[i];
+                              break;
+                            }
+                          }
+                        }
 			if( typeof fn == "function" ) fn(result);
 			else $input.trigger("result", result && [result.data, result.value]);
 		}
 		$.each(trimWords($input.val()), function(i, value) {
 			request(value, findValueCallback, findValueCallback);
 		});
-	}).bind("flushCache", function() {
+	}).bind("initSearch", function(){
+          function setValue(q, data){
+            if(data[0]){
+              $input.val(data[0].result);
+            }
+          }
+          $.each(trimWords($input.val()), function(i, value) {
+            request(value, setValue, setValue);
+          });
+        }).bind("flushCache", function() {
 		cache.flush();
 	}).bind("setOptions", function() {
 		$.extend(options, arguments[1]);
