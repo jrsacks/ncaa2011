@@ -189,8 +189,11 @@ $.Autocompleter = function(input, options) {
 		});
 	}).bind("initSearch", function(){
           function setValue(q, data){
-            if(data[0]){
+            if(data && data[0]){
               $input.val(data[0].result);
+            }
+            else{
+              $input.val('');
             }
           }
           $.each(trimWords($input.val()), function(i, value) {

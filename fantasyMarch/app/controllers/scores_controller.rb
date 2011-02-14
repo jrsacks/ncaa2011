@@ -39,6 +39,13 @@ class ScoresController < ApplicationController
     render :index
   end
 
+  def date
+    ids = Game.new.findForDate params[:date]
+
+    @scores = []
+    render :index
+  end
+
   # GET /scores/1/edit
   def edit
     @score = Score.find(params[:id])

@@ -5,6 +5,7 @@ FantasyMarch::Application.routes.draw do
   match 'players/team/:teamAbbrev' => 'players#team'
   resources :players
 
+  match 'scores/date/:date' => 'scores#date'
   match 'scores/game/:gameId' => 'scores#game'
   resources :scores
 

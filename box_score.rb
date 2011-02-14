@@ -109,7 +109,22 @@ def all_players()
   puts players.length
 end
 
+def get_boxes_from_date(date)
+  page = "http://rivals.yahoo.com/ncaa/basketball/scoreboard?d=#{date}"
+  boxes = []
+  open(page) { |f| 
+    f.each_line { |line|
+      if line.include? "\/ncaab\/boxscore?gid="                 
+        boxes << line.match(/[^0-9]*([0-9]*).*/)[1]
+      end
+    }
+  }
+  puts boxes
+end
+
 #get_players_from_game('201102010657')
-get_players_for_team("kaa")#, "Kansas Jayhawks")
+#get_players_for_team("kaa")#, "Kansas Jayhawks")
 #get_all_teams()
 #all_players()
+#
+get_boxes_from_date("2011-02-13")
