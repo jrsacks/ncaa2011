@@ -22,4 +22,17 @@ class Ncaateam
       end
     end
   end
+
+  def all
+    stringIo = open("http://rivals.yahoo.com/ncaa/basketball/teams")
+    html = stringIo.read
+
+    doc = Hpricot(html)
+    doc.search("a").each do |line|
+      if line.to_html.match(/ncaab\/teams\//)
+        abbrev = line.to_html.match(/ncaab\/teams\/(.*)\"/)[1]
+        load(abbrev)
+      end
+    end
+  end
 end

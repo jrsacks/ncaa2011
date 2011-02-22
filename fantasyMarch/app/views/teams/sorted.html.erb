@@ -12,7 +12,7 @@
     </ul>
     <ul>
       <% team.players.sort.each do |player| %>
-        <li class='player'>
+        <%=raw "<li class='player #{player.alive}'>"%>
         <%= player.name %>
         <ul class='player-points'>
           <% player.games.each do |game| %>

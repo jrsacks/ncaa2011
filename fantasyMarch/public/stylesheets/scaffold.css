@@ -60,6 +60,10 @@ div.field, div.actions {
   list-style:none;
 }
 
+.false {
+ color: red;
+}
+
 .player-points{
   list-style: none;
   position: absolute;

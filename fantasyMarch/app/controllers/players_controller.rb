@@ -39,6 +39,13 @@ class PlayersController < ApplicationController
     render :index
   end
 
+  def all
+    Ncaateam.new.all
+
+    @players = []
+    render :index
+  end
+
   # GET /players/1/edit
   def edit
     @player = Player.find(params[:id])
