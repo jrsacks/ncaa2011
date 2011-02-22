@@ -40,7 +40,7 @@ class PlayersController < ApplicationController
   end
 
   def all
-    Ncaateam.new.all
+    Ncaateam.new.all params[:start]
 
     @players = []
     render :index

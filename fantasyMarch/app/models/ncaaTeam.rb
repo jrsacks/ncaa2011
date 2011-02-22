@@ -12,7 +12,7 @@ class Ncaateam
         idMatch = line.match(/[0-9]+/)
         fullname = (Hpricot(line)/"a").inner_html.split(', ').reverse.join(' ')
 
-        unless id.nil?
+        unless idMatch.nil?
           player = Player.find_or_create_by_playerId(:playerId => idMatch[0])
           player.name = fullname
           player.team = teamname
@@ -23,7 +23,9 @@ class Ncaateam
     end
   end
 
-  def all
+  def all(teamStart)
+    start = false
+    start = true if teamStart.nil?
     stringIo = open("http://rivals.yahoo.com/ncaa/basketball/teams")
     html = stringIo.read
 
@@ -31,7 +33,9 @@ class Ncaateam
     doc.search("a").each do |line|
       if line.to_html.match(/ncaab\/teams\//)
         abbrev = line.to_html.match(/ncaab\/teams\/(.*)\"/)[1]
-        load(abbrev)
+        Rails.logger.info abbrev
+        start = true if abbrev == teamStart
+        load(abbrev) if start
       end
     end
   end

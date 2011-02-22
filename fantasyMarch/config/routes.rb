@@ -2,6 +2,7 @@ FantasyMarch::Application.routes.draw do
   root :to => 'teams#sorted'
   resources :teams
 
+  match 'players/all/:start' => 'players#all'
   match 'players/team/:teamAbbrev' => 'players#team'
   resources :players
 

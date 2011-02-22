@@ -80,7 +80,7 @@
       var i=0;
       for (i=0;i<10;i++){
         $('#team_player' + i).attr('readonly','readonly');
-        $('#player' + i).autocomplete(data, {matchContains : true});
+        $('#player' + i).autocomplete(data, {matchContains : true, max : 20});
         search(i);
         $('#player' + i).change(function(){
           var fullInfo = $(this).val();
