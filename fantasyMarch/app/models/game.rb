@@ -23,6 +23,8 @@ class Game
           score.points = pointMatch[0]
           score.save
           player = Player.where(:playerId => idMatch[0]).first
+          player.current = true
+          player.save
           teamScore[player.team] += pointMatch[0].to_i
         end
       }
@@ -30,6 +32,11 @@ class Game
       if final
         Player.where(:team => teamScore.index(teamScore.values.min)).each { |p|
           p.alive = false
+          p.current = false
+          p.save
+        }
+        Player.where(:team => teamScore.index(teamScore.values.max)).each { |p|
+          p.current = false
           p.save
         }
       end

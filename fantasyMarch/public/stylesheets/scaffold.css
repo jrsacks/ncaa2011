@@ -60,9 +60,13 @@ div.field, div.actions {
   list-style:none;
 }
 
-.false {
+.lost {
  color: red;
 }
+
+.current {
+  background: yellow;
+} 
 
 .player-points{
   list-style: none;
