@@ -12,48 +12,41 @@ class Game
     }
 
     teamScore = Hash.new(0)
-    begin
-      doc = Hpricot(html)  
-      doc.search("tr[@class=ysprow]").each {|p|
-        idMatch = p.search('a').to_html.match(/[0-9]+/)
-        line = p.inner_html.split("<\/td>")      
-        pointMatch = line[-2].match(/[0-9]+/)
-        unless pointMatch.nil? || idMatch.nil?
-          score = Score.find_or_create_by_playerId_and_gameId(:playerId => idMatch[0], :gameId => gameId)
-          score.points = pointMatch[0]
-          score.save
-          player = Player.where(:playerId => idMatch[0]).first
-          player.current = true
-          player.save
-          teamScore[player.team] += pointMatch[0].to_i
-        end
-      }
-      Rails.logger.info teamScore
-      if final
-        Player.where(:team => teamScore.index(teamScore.values.min)).each { |p|
-          p.alive = false
-          p.current = false
-          p.save
-        }
-        Player.where(:team => teamScore.index(teamScore.values.max)).each { |p|
-          p.current = false
-          p.save
-        }
+    doc = Nokogiri::HTML(html)  
+    doc.xpath('//tr[@class="ysprow"]').each {|p|
+      idMatch = p.search('a').to_html.match(/[0-9]+/)
+      line = p.inner_html.split("<\/td>")      
+      pointMatch = line[-2].match(/[0-9]+/)
+      unless pointMatch.nil? || idMatch.nil?
+        score = Score.find_or_create_by_playerId_and_gameId(:playerId => idMatch[0], :gameId => gameId)
+        score.points = pointMatch[0]
+        score.save
+        player = Player.where(:playerId => idMatch[0]).first
+        player.current = true
+        player.save
+        teamScore[player.team] += pointMatch[0].to_i
       end
-    rescue => e
-      Rails.logger.error "Caught Error: #{e}"
+    }
+    Rails.logger.info teamScore
+    if final
+      Player.where(:team => teamScore.index(teamScore.values.min)).each { |p|
+        p.alive = false
+        p.current = false
+        p.save
+      }
+      Player.where(:team => teamScore.index(teamScore.values.max)).each { |p|
+        p.current = false
+        p.save
+      }
     end
   end
 
   def findForDate(date)
-    page = "http://rivals.yahoo.com/ncaa/basketball/scoreboard?d=#{date}"
-    open(page) { |f| 
-      f.each_line { |line|
-        if line.include? "\/ncaab\/boxscore?gid="                 
-          #if not final already
-          load line.match(/[^0-9]*([0-9]*).*/)[1]
-        end
-      }
-    }
+    doc = Nokogiri::HTML(open("http://rivals.yahoo.com/ncaa/basketball/scoreboard?d=#{date}"))
+    doc.css('td a').each do |td|
+      if td.text.include? 'Box Score'
+        load td['href'].match(/[^0-9]*([0-9]*).*/)[1]
+      end
+    end
   end
 end

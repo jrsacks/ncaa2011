@@ -1,130 +1,84 @@
 require 'rubygems'
 require 'open-uri'
+require 'nokogiri'
 require 'hpricot'
 
-#tested by running through real data from yahoo before tourney
-
-class Score
-  def initialize(playerId, gameId, points)
-    @playerId = playerId
-    @gameId = gameId
-    @points = points
-  end
-end
-
-def get_players_from_game(gameId)
+def load(gameId)
   stringIo = open("http://rivals.yahoo.com/ncaa/basketball/boxscore?gid=#{gameId}")
+  final = false
   html = stringIo.read
-  (1..2).each { |i| html.gsub!("ysprow#{i}","ysprow") }  
+  (1..2).each { |i| 
+    html.gsub!("ysprow#{i}","ysprow") 
+  }  
 
-  doc = Hpricot(html)  
-  scores = []
-  doc.search("tr[@class=ysprow]").each {|p|
-    id = p.search('a').to_html.match(/[0-9]+/)
-    id = id[0] unless id.nil?
-    line = p.inner_html.split("<\/td>")      
-    points = line[-2].match(/[0-9]+/)
-    points = points[0] unless points.nil?
-    scores << Score.new(id, gameId, points)
+  html.each { |line|
+    final = true if line.include? "Final</span>&nbsp;"
   }
-  scores.each { |score| puts score.inspect }
-  scores
-end
 
-class Player
-  def initialize(id, name, team)
-    @id = id
-    @name = name
-    @team = team
-  end
-
-  def to_s
-    "#{@id}: #{@name} (#{@team})"
-  end
-end
-
-def get_players_for_team(team)
-  stringIo = open("http://rivals.yahoo.com/ncaa/basketball/teams/#{team}/roster")
-  html = stringIo.read
-
-  players = []
-  teamname = ''
-  html.each do |line|
-    if line.match(/<title>/)
-      teamname =  (Hpricot(line)/"title").inner_html.split(' -')[0]
+  teamScore = Hash.new(0)
+  doc = Nokogiri::HTML(html)
+  doc.xpath('//tr[@class="ysprow"]').each {|p|
+    idMatch = p.search('a').to_html.match(/[0-9]+/)
+    line = p.inner_html.split("<\/td>")      
+    pointMatch = line[-2].match(/[0-9]+/)
+    unless pointMatch.nil? || idMatch.nil?
+      puts "#{idMatch[0]} #{pointMatch[0]}"
     end
-    if line.match(/\/ncaab\/players\/[0-9]+/) 
-      id = line.match(/[0-9]+/)
-      fullname = (Hpricot(line)/"a").inner_html.split(', ').reverse.join(' ')
-      players.push Player.new(id, fullname, teamname)
-    end
-  end
-
-  players.each { |player| puts player.to_s}
+  }
 end
 
-class Team
-  attr_accessor :name, :abbrev
-  def initialize(name, abbrev)
-    @name = name
-    @abbrev = abbrev
-  end
-
-  def to_s
-    "#{@name} (#{@abbrev})"
-  end
-end
-
-def get_all_teams()
-  stringIo = open("http://rivals.yahoo.com/ncaa/basketball/teams")
-  html = stringIo.read
-
-  teams = []
-  doc = Hpricot(html)
-  doc.search("a").each do |line|
-    if line.to_html.match(/ncaab\/teams\//)
-      abbrev = line.to_html.match(/ncaab\/teams\/(.*)\"/)[1]
-      name = line.inner_html.gsub('&nbsp;',' ')
-      teams.push Team.new(name, abbrev)
-    end
-  end
-
-  teams
-end
-
-def all_players()
-  teams = get_all_teams()
-  players = []
-  start = false
-  teams.each do |team|
-    start = true if team.abbrev == 'aan'
-    if(start)
-      puts "Finding players for #{team}"
-      get_players_for_team(team.abbrev, team.name).each do |player|
-        players.push player
-      end
-    end
-  end
-
-  puts players.length
-end
-
-def get_boxes_from_date(date)
+def findForDate(date)
   page = "http://rivals.yahoo.com/ncaa/basketball/scoreboard?d=#{date}"
-  boxes = []
   open(page) { |f| 
     f.each_line { |line|
       if line.include? "\/ncaab\/boxscore?gid="                 
-        boxes << line.match(/[^0-9]*([0-9]*).*/)[1]
+        #if not final already
+        load line.match(/[^0-9]*([0-9]*).*/)[1]
       end
     }
   }
-  puts boxes
 end
 
-#get_players_from_game('201102010657')
-#get_players_for_team("kaa")#, "Kansas Jayhawks")
-#get_all_teams()
-#all_players()
-#
-get_boxes_from_date("2011-02-13")
+
+def loadTeam(teamAbbrev)
+  stringIo = open("http://rivals.yahoo.com/ncaa/basketball/teams/#{teamAbbrev}/roster")
+  html = stringIo.read
+
+  teamname = ''
+  players = []
+  html.each do |line|
+    if line.match(/<title>/)
+      teamname =  (Nokogiri::HTML(line)/"title").inner_html.split(' -')[0]
+    end
+    if line.match(/\/ncaab\/players\/[0-9]+/) 
+      idMatch = line.match(/[0-9]+/)
+      fullname = (Nokogiri::HTML(line)/"a").inner_html.split(', ').reverse.join(' ')
+
+      players << {:fullname => fullname, :team => teamname, :id => idMatch[0]}
+
+      #unless idMatch.nil?
+      #  player = Player.find_or_create_by_playerId(:playerId => idMatch[0])
+      #  player.name = fullname
+      #  player.team = teamname
+      #  player.alive = true
+      #  player.save
+      #end
+    end
+  end
+  puts players
+end
+
+def all()
+  doc = Nokogiri::HTML(open("http://rivals.yahoo.com/ncaa/basketball/teams"))
+  teams = []
+  doc.search("a").each do |line|
+    if line.to_html.match(/ncaab\/teams\//)
+      abbrev = line.to_html.match(/ncaab\/teams\/(.*)\"/)[1]
+      teams << abbrev
+    end
+  end
+
+  puts teams.length
+end
+
+load '201102260363'

@@ -1,7 +1,7 @@
 require 'rubygems'
 
 require 'open-uri'
-require 'hpricot'
+require 'nokogiri'
 
 # Set up gems listed in the Gemfile.
 gemfile = File.expand_path('../../Gemfile', __FILE__)
