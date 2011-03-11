@@ -3,30 +3,28 @@ class Game
     stringIo = open("http://rivals.yahoo.com/ncaa/basketball/boxscore?gid=#{gameId}")
     final = false
     html = stringIo.read
-    (1..2).each { |i| 
-      html.gsub!("ysprow#{i}","ysprow") 
-    }  
-
-    html.each { |line|
-      final = true if line.include? "Final</span>&nbsp;"
-    }
 
     teamScore = Hash.new(0)
     doc = Nokogiri::HTML(html)  
-    doc.xpath('//tr[@class="ysprow"]').each {|p|
+
+    doc.css('#ysp-reg-box-line_score .final').each{ |p|
+      final = true
+    }
+
+    doc.css('#ysp-reg-box-game_details-game_stats .bd tbody tr').each{ |p|
       idMatch = p.search('a').to_html.match(/[0-9]+/)
-      line = p.inner_html.split("<\/td>")      
-      pointMatch = line[-2].match(/[0-9]+/)
-      unless pointMatch.nil? || idMatch.nil?
+      points = p.search('td').last.text
+      unless points.nil? || idMatch.nil?
         score = Score.find_or_create_by_playerId_and_gameId(:playerId => idMatch[0], :gameId => gameId)
-        score.points = pointMatch[0]
+        score.points = points
         score.save
         player = Player.where(:playerId => idMatch[0]).first
         player.current = true
         player.save
-        teamScore[player.team] += pointMatch[0].to_i
+        teamScore[player.team] += points.to_i
       end
     }
+
     Rails.logger.info teamScore
     if final
       Player.where(:team => teamScore.index(teamScore.values.min)).each { |p|
