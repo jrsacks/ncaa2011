@@ -1,0 +1,94 @@
+<%= form_for(team) do |f| %>
+  <% if f.error_messages %>
+    <div id="error_explanation">
+      <h2>Error Saving</h2>
+      <ul>
+      <% f.error_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :player0 %>
+    <%= f.text_field :player0 %>
+    <input class="autocomplete" id="player0" value=<%= @team.player0 %> />
+  </div>
+  <div class="field">
+    <%= f.label :player1 %>
+    <%= f.text_field :player1 %>
+    <input class="autocomplete" id="player1" value=<%= @team.player1 %> />
+  </div>
+  <div class="field">
+    <%= f.label :player2 %>
+    <%= f.text_field :player2 %>
+    <input class="autocomplete" id="player2" value=<%= @team.player2 %> />
+  </div>
+  <div class="field">
+    <%= f.label :player3 %>
+    <%= f.text_field :player3 %>
+    <input class="autocomplete" id="player3" value=<%= @team.player3 %> />
+  </div>
+  <div class="field">
+    <%= f.label :player4 %>
+    <%= f.text_field :player4 %>
+    <input class="autocomplete" id="player4" value=<%= @team.player4 %> />
+  </div>
+  <div class="field">
+    <%= f.label :player5 %>
+    <%= f.text_field :player5 %>
+    <input class="autocomplete" id="player5" value=<%= @team.player5 %> />
+  </div>
+  <div class="field">
+    <%= f.label :player6 %>
+    <%= f.text_field :player6 %>
+    <input class="autocomplete" id="player6" value=<%= @team.player6 %> />
+  </div>
+  <div class="field">
+    <%= f.label :player7 %>
+    <%= f.text_field :player7 %>
+    <input class="autocomplete" id="player7" value=<%= @team.player7 %> />
+  </div>
+  <div class="field">
+    <%= f.label :player8 %>
+    <%= f.text_field :player8 %>
+    <input class="autocomplete" id="player8" value=<%= @team.player8 %> />
+  </div>
+  <div class="field">
+    <%= f.label :player9 %>
+    <%= f.text_field :player9 %>
+    <input class="autocomplete" id="player9" value=<%= @team.player9 %> />
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      var data = [<%=raw  @players.join(',') %>];
+
+      function search(i){
+        setTimeout(function(){$('#player' + i).initSearch();}, 50);
+      }
+
+      var i=0;
+      for (i=0;i<10;i++){
+        $('#team_player' + i).attr('readonly','readonly');
+        $('#player' + i).autocomplete(data, {matchContains : true, max : 20});
+        search(i);
+        $('#player' + i).change(function(){
+          var fullInfo = $(this).val();
+          if(fullInfo){
+            $('#team_' + $(this).attr('id')).attr('value', fullInfo.split(' ').slice(-1).toString());
+          }
+        });
+      }
+    });
+  </script>
+
+<% end %>

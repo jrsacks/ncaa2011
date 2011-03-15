@@ -1,0 +1,27 @@
+<h1>Listing scores</h1>
+
+<table>
+  <tr>
+    <th>Playerid</th>
+    <th>Gameid</th>
+    <th>Points</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @scores.each do |score| %>
+  <tr>
+    <td><%= score.playerId %></td>
+    <td><%= score.gameId %></td>
+    <td><%= score.points %></td>
+    <td><%= link_to 'Show', score %></td>
+    <td><%= link_to 'Edit', edit_score_path(score) %></td>
+    <td><%= link_to 'Destroy', score, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Score', new_score_path %>
