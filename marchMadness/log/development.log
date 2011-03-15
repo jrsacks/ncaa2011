@@ -19999,3 +19999,867 @@ Rendering teams/sorted
   [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) ORDER BY gameId[0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
 Completed in 187ms (View: 170, DB: 14) | 200 OK [http://localhost/]
+
+
+Processing TeamsController#sorted (for 127.0.0.1 at 2011-03-15 18:51:10) [GET]
+  [4;36;1mTeam Load (0.7ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/sorted
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101968) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88693) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97332) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81997) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81998) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88691) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88690) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97333) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97334) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88694) LIMIT 1[0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88965) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72820) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72819) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72822) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82164) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82168) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97096) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82166) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82165) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88967) LIMIT 1[0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
+  [4;35;1mPlayer Load (0.3ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72826) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72827) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81731) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97491) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101790) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.8ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97511) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.4ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 73138) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81649) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81660) LIMIT 1[0m
+  [4;36;1mPlayer Load (2.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 73056) LIMIT 1[0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101968) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88693) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97332) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81997) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81998) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88691) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88690) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97333) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97334) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88694) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72826) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72827) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81731) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97491) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101790) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97511) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 73138) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81649) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81660) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 73056) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72826) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72827) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81731) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97491) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101790) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97511) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 73138) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81649) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81660) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 73056) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;35;1mScore Load (0.3ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101968) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88693) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97332) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81997) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81998) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88691) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88690) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97333) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97334) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88694) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101968) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88693) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97332) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81997) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81998) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88691) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88690) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97333) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97334) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88694) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88965) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72820) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72819) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72822) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82164) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82168) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97096) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82166) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82165) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88967) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88965) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72820) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72819) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72822) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82164) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82168) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97096) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82166) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82165) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88967) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) [0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) [0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
+Completed in 187ms (View: 169, DB: 15) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-15 18:51:40) [GET]
+
+ActionController::RoutingError (No route matches "/scores/game/201103130413" with {:method=>:get}):
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ScoresController#game (for 127.0.0.1 at 2011-03-15 18:51:46) [GET]
+  Parameters: {"gameId"=>"201103130413"}
+
+Errno::ENOENT (No such file or directory - http://rivals.yahoo.com/ncaa/basketball/boxscore?gid=201103130413):
+  app/models/game.rb:3:in `initialize'
+  app/models/game.rb:3:in `open'
+  app/models/game.rb:3:in `load'
+  app/controllers/scores_controller.rb:37:in `game'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.8ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ScoresController#game (for 127.0.0.1 at 2011-03-15 18:52:23) [GET]
+  Parameters: {"gameId"=>"201103130413"}
+  [4;35;1mScore Load (0.4ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '81731') LIMIT 1[0m
+  [4;36;1mPlayer Load (0.4ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '81731') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:24', "current" = 't' WHERE "id" = 398[0m
+  [4;36;1mScore Load (0.4ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '72827') LIMIT 1[0m
+  [4;35;1mPlayer Load (0.3ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = '72827') LIMIT 1[0m
+  [4;36;1mPlayer Update (0.3ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:24', "current" = 't' WHERE "id" = 408[0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '88627') LIMIT 1[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88627') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:24', "current" = 't' WHERE "id" = 405[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '81980') LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = '81980') LIMIT 1[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:24', "current" = 't' WHERE "id" = 406[0m
+  [4;35;1mScore Load (0.3ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '72826') LIMIT 1[0m
+  [4;36;1mPlayer Load (0.4ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '72826') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:24', "current" = 't' WHERE "id" = 407[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '97328') LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = '97328') LIMIT 1[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:24', "current" = 't' WHERE "id" = 400[0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '88970') LIMIT 1[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88970') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:24', "current" = 't' WHERE "id" = 399[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '97330') LIMIT 1[0m
+  [4;35;1mPlayer Load (0.3ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = '97330') LIMIT 1[0m
+  [4;36;1mPlayer Update (0.3ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:24', "current" = 't' WHERE "id" = 409[0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '88625') LIMIT 1[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88625') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 't' WHERE "id" = 402[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '88219') LIMIT 1[0m
+  [4;35;1mPlayer Load (0.3ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = '88219') LIMIT 1[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 't' WHERE "id" = 480[0m
+  [4;35;1mScore Load (0.3ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '97489') LIMIT 1[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97489') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 't' WHERE "id" = 483[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '88221') LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = '88221') LIMIT 1[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 't' WHERE "id" = 485[0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '81570') LIMIT 1[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '81570') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 't' WHERE "id" = 487[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '97491') LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = '97491') LIMIT 1[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 't' WHERE "id" = 471[0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '88220') LIMIT 1[0m
+  [4;36;1mPlayer Load (0.4ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88220') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 't' WHERE "id" = 484[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '81569') LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = '81569') LIMIT 1[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 't' WHERE "id" = 486[0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413' AND "scores"."playerId" = '72893') LIMIT 1[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '72893') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 't' WHERE "id" = 482[0m
+North Carolina Tar Heels58Duke Blue Devils75
+  [4;36;1mPlayer Load (2.9ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."team" = 'North Carolina Tar Heels') [0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 471[0m
+  [4;36;1mPlayer Update (0.3ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 480[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 482[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 483[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 484[0m
+  [4;36;1mPlayer Update (0.4ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 485[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 486[0m
+  [4;36;1mPlayer Update (0.4ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 487[0m
+  [4;35;1mPlayer Load (1.6ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."team" = 'Duke Blue Devils') [0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 398[0m
+  [4;35;1mPlayer Update (0.4ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 399[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 400[0m
+  [4;35;1mPlayer Update (0.4ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 402[0m
+  [4;36;1mPlayer Update (0.3ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 405[0m
+  [4;35;1mPlayer Update (0.4ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 406[0m
+  [4;36;1mPlayer Update (0.4ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 407[0m
+  [4;35;1mPlayer Update (0.4ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 408[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:52:25', "current" = 'f' WHERE "id" = 409[0m
+  [4;35;1mScore Load (0.8ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413') [0m
+Rendering template within layouts/application
+Rendering scores/index
+Completed in 2078ms (View: 29, DB: 23) | 200 OK [http://localhost/scores/games/201103130413]
+
+
+Processing ScoresController#game (for 127.0.0.1 at 2011-03-15 18:52:59) [GET]
+  Parameters: {"gameId"=>"201103120443"}
+  [4;36;1mScore Load (0.4ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '81997') LIMIT 1[0m
+  [4;35;1mScore Create (0.3ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 7, 81997)[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '81997') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 20[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '81998') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 6, 81998)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '81998') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 28[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '88692') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 6, 88692)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88692') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 26[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '97332') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 15, 97332)[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97332') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 23[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '88693') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 16, 88693)[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88693') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 27[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '88694') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 2, 88694)[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88694') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 31[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '97334') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 9, 97334)[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97334') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 30[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '88691') LIMIT 1[0m
+  [4;35;1mScore Create (0.3ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 0, 88691)[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88691') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 25[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '60050') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 4, 60050)[0m
+  [4;36;1mPlayer Load (1.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '60050') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 1544[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '72802') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 16, 72802)[0m
+  [4;36;1mPlayer Load (0.7ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '72802') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 1541[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '72804') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 0, 72804)[0m
+  [4;36;1mPlayer Load (0.6ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '72804') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 1543[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '82004') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 14, 82004)[0m
+  [4;36;1mPlayer Load (0.6ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '82004') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 1538[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '97511') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 14, 97511)[0m
+  [4;36;1mPlayer Load (0.6ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97511') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 1550[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '97509') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 2, 97509)[0m
+  [4;36;1mPlayer Load (0.7ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97509') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 1548[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '97508') LIMIT 1[0m
+  [4;35;1mScore Create (0.3ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 9, 97508)[0m
+  [4;36;1mPlayer Load (0.6ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97508') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 1539[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443' AND "scores"."playerId" = '97512') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-15 23:53:00', '2011-03-15 23:53:00', 201103120443, 9, 97512)[0m
+  [4;36;1mPlayer Load (0.6ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97512') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:00', "current" = 't' WHERE "id" = 1551[0m
+Michigan Wolverines61Ohio State Buckeyes68
+  [4;36;1mPlayer Load (2.6ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."team" = 'Michigan Wolverines') [0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "alive" = 'f' WHERE "id" = 17[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "alive" = 'f' WHERE "id" = 18[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "alive" = 'f' WHERE "id" = 19[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f', "alive" = 'f' WHERE "id" = 20[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "alive" = 'f' WHERE "id" = 21[0m
+  [4;36;1mPlayer Update (0.3ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "alive" = 'f' WHERE "id" = 22[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f', "alive" = 'f' WHERE "id" = 23[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "alive" = 'f' WHERE "id" = 24[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f', "alive" = 'f' WHERE "id" = 25[0m
+  [4;36;1mPlayer Update (0.3ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f', "alive" = 'f' WHERE "id" = 26[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f', "alive" = 'f' WHERE "id" = 27[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f', "alive" = 'f' WHERE "id" = 28[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "alive" = 'f' WHERE "id" = 29[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f', "alive" = 'f' WHERE "id" = 30[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f', "alive" = 'f' WHERE "id" = 31[0m
+  [4;36;1mPlayer Load (1.6ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."team" = 'Ohio State Buckeyes') [0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f' WHERE "id" = 1538[0m
+  [4;36;1mPlayer Update (0.3ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f' WHERE "id" = 1539[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f' WHERE "id" = 1541[0m
+  [4;36;1mPlayer Update (0.4ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f' WHERE "id" = 1543[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f' WHERE "id" = 1544[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f' WHERE "id" = 1548[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f' WHERE "id" = 1550[0m
+  [4;36;1mPlayer Update (0.4ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-15 23:53:01', "current" = 'f' WHERE "id" = 1551[0m
+  [4;35;1mScore Load (0.5ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103120443') [0m
+Rendering template within layouts/application
+Rendering scores/index
+Completed in 2065ms (View: 25, DB: 28) | 200 OK [http://localhost/scores/games/201103120443]
+
+
+Processing TeamsController#sorted (for 127.0.0.1 at 2011-03-15 18:53:05) [GET]
+  [4;36;1mTeam Load (0.5ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/sorted
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101968) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88693) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97332) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81997) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81998) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88691) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88690) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97333) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97334) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88694) LIMIT 1[0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88965) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72820) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72819) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72822) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82164) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82168) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97096) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82166) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.1ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82165) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.1ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88967) LIMIT 1[0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
+  [4;35;1mPlayer Load (0.3ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72826) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72827) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81731) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97491) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101790) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.8ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97511) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.4ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 73138) LIMIT 1[0m
+  [4;36;1mPlayer Load (0.2ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81649) LIMIT 1[0m
+  [4;35;1mPlayer Load (0.2ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81660) LIMIT 1[0m
+  [4;36;1mPlayer Load (1.7ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 73056) LIMIT 1[0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;36;1mScore Load (0.1ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101968) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88693) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97332) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81997) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81998) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88691) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88690) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97333) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97334) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88694) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72826) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72827) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81731) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97491) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101790) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97511) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 73138) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81649) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81660) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 73056) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72826) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72827) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81731) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97491) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101790) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97511) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 73138) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81649) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81660) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 73056) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;35;1mScore Load (0.3ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97511) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73138) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72827) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97491) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72826) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81731) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 73056) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81649) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81660) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101790) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101968) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88693) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97332) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81997) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81998) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88691) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88690) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97333) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97334) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88694) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 101968) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88693) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97332) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 81997) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 81998) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88691) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88690) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 97333) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97334) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88694) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;35;1mScore Load (0.3ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88693) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97332) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97334) [0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81997) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 81998) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88694) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88691) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97333) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88690) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 101968) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88965) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72820) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72819) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72822) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82164) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82168) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97096) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82166) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82165) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88967) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 88965) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72820) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 72819) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 72822) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82164) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82168) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 97096) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 82166) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."playerId" = 82165) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = 88967) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) [0m
+  [4;35;1mScore Load (0.2ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88965) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72820) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72819) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 72822) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82164) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82168) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 97096) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82166) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 82165) [0m
+  [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) ORDER BY gameId[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
+Completed in 181ms (View: 164, DB: 15) | 200 OK [http://localhost/]

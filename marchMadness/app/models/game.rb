@@ -1,3 +1,7 @@
+require 'rubygems'
+require 'nokogiri'
+require 'open-uri'
+
 class Game
   def load(gameId)
     stringIo = open("http://rivals.yahoo.com/ncaa/basketball/boxscore?gid=#{gameId}")
@@ -15,7 +19,12 @@ class Game
       idMatch = p.search('a').to_html.match(/[0-9]+/)
       points = p.search('td').last.text
       unless points.nil? || idMatch.nil?
-        score = Score.find_or_create_by_playerId_and_gameId(:playerId => idMatch[0], :gameId => gameId)
+        score = Score.find(:first, :conditions => {:playerId => idMatch[0], :gameId => gameId})
+        if score.nil?
+          score = Score.new
+          score.playerId = idMatch[0]
+          score.gameId = gameId
+        end
         score.points = points
         score.save
         player = Player.find(:first, :conditions => {:playerId => idMatch[0]})
