@@ -1,3 +1,6 @@
+ENV['GEM_PATH'] = '/home/hesthesa/ruby/gems:/usr/lib/ruby/gems/1.8'
+$:.push("/home/hesthesa/ruby/gems")
+
 # Be sure to restart your server when you modify this file
 
 # Specifies gem version of Rails to use when vendor/rails is not present
