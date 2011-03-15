@@ -1,3 +1,4 @@
+
 class ScoresController < ApplicationController
   # GET /scores
   # GET /scores.xml

@@ -2,7 +2,6 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "teams", :action => "sorted"
   map.resources :teams
 
-  map.connect 'players/all/:start',  :controller => "players", :action => "all"
   map.connect 'players/team/:teamAbbrev',  :controller => "players", :action => "team"
 
   map.resources :players

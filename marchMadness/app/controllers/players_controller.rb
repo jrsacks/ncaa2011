@@ -1,3 +1,5 @@
+require 'ncaaTeam'
+
 class PlayersController < ApplicationController
   # GET /players
   # GET /players.xml

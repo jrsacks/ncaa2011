@@ -18,7 +18,7 @@ class Game
         score = Score.find_or_create_by_playerId_and_gameId(:playerId => idMatch[0], :gameId => gameId)
         score.points = points
         score.save
-        player = Player.where(:playerId => idMatch[0]).first
+        player = Player.find(:first, :conditions => {:playerId => idMatch[0]})
         player.current = true
         player.save
         teamScore[player.team] += points.to_i
@@ -27,12 +27,12 @@ class Game
 
     Rails.logger.info teamScore
     if final
-      Player.where(:team => teamScore.index(teamScore.values.min)).each { |p|
+      Player.find(:all, :conditions => {:team => teamScore.index(teamScore.values.min)}).each { |p|
         p.alive = false
         p.current = false
         p.save
       }
-      Player.where(:team => teamScore.index(teamScore.values.max)).each { |p|
+      Player.find(:all, :conditions => {:team => teamScore.index(teamScore.values.max)}).each { |p|
         p.current = false
         p.save
       }
