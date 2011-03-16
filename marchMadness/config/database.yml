@@ -25,7 +25,10 @@ example:
   password: ncaa11
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql
+  database: hesthesa_ncaa11
+  encoding: utf8
+  database: hesthesa_ncaa11
   pool: 5
-  timeout: 5000
+  username: hesthesa_ncaa11
+  password: ncaa11
