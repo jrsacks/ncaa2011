@@ -20863,3 +20863,131 @@ Rendering teams/sorted
   [4;35;1mScore Load (0.1ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) ORDER BY gameId[0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."playerId" = 88967) [0m
 Completed in 181ms (View: 164, DB: 15) | 200 OK [http://localhost/]
+
+
+Processing ScoresController#game (for 127.0.0.1 at 2011-03-15 19:11:41) [GET]
+  Parameters: {"gameId"=>"201103130413"}
+
+NoMethodError (undefined method `-' for "201103130413":String):
+  app/models/game.rb:22:in `load'
+  nokogiri (1.4.4) lib/nokogiri/xml/node_set.rb:239:in `each'
+  nokogiri (1.4.4) lib/nokogiri/xml/node_set.rb:238:in `upto'
+  nokogiri (1.4.4) lib/nokogiri/xml/node_set.rb:238:in `each'
+  app/models/game.rb:18:in `load'
+  app/controllers/scores_controller.rb:37:in `game'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jsacks/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.7ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ScoresController#game (for 127.0.0.1 at 2011-03-15 19:12:07) [GET]
+  Parameters: {"gameId"=>"201103130413"}
+  [4;36;1mScore Load (0.6ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '81731') LIMIT 1[0m
+  [4;35;1mScore Create (0.3ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 11, 81731)[0m
+  [4;36;1mPlayer Load (0.6ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '81731') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 398[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '72827') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 20, 72827)[0m
+  [4;36;1mPlayer Load (0.5ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '72827') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 408[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '88627') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 6, 88627)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88627') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 405[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '81980') LIMIT 1[0m
+  [4;35;1mScore Create (0.3ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 9, 81980)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '81980') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 406[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '72826') LIMIT 1[0m
+  [4;35;1mScore Create (0.3ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 11, 72826)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '72826') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 407[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '97328') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 0, 97328)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97328') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 400[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '88970') LIMIT 1[0m
+  [4;35;1mScore Create (0.3ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 9, 88970)[0m
+  [4;36;1mPlayer Load (0.6ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88970') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 399[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '97330') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 0, 97330)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97330') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 409[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '88625') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 9, 88625)[0m
+  [4;36;1mPlayer Load (0.4ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88625') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 402[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '88219') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 10, 88219)[0m
+  [4;36;1mPlayer Load (0.4ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88219') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 480[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '97489') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 8, 97489)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97489') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 483[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '88221') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 0, 88221)[0m
+  [4;36;1mPlayer Load (0.5ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88221') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 485[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '81570') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 14, 81570)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '81570') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 487[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '97491') LIMIT 1[0m
+  [4;35;1mScore Create (0.2ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 16, 97491)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '97491') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 471[0m
+  [4;36;1mScore Load (0.2ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '88220') LIMIT 1[0m
+  [4;35;1mScore Create (0.4ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 6, 88220)[0m
+  [4;36;1mPlayer Load (0.4ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '88220') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 484[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '81569') LIMIT 1[0m
+  [4;35;1mScore Create (0.4ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 0, 81569)[0m
+  [4;36;1mPlayer Load (0.4ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '81569') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 486[0m
+  [4;36;1mScore Load (0.3ms)[0m   [0;1mSELECT * FROM "scores" WHERE ("scores"."gameId" = 3130413 AND "scores"."playerId" = '72893') LIMIT 1[0m
+  [4;35;1mScore Create (0.3ms)[0m   [0mINSERT INTO "scores" ("created_at", "updated_at", "gameId", "points", "playerId") VALUES('2011-03-16 00:12:08', '2011-03-16 00:12:08', 3130413, 4, 72893)[0m
+  [4;36;1mPlayer Load (0.3ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."playerId" = '72893') LIMIT 1[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 't' WHERE "id" = 482[0m
+  [4;36;1mPlayer Load (2.9ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."team" = 'North Carolina Tar Heels') [0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 471[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 480[0m
+  [4;35;1mPlayer Update (0.4ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 482[0m
+  [4;36;1mPlayer Update (0.4ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 483[0m
+  [4;35;1mPlayer Update (0.2ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 484[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 485[0m
+  [4;35;1mPlayer Update (0.4ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 486[0m
+  [4;36;1mPlayer Update (0.4ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 487[0m
+  [4;35;1mPlayer Load (1.8ms)[0m   [0mSELECT * FROM "players" WHERE ("players"."team" = 'Duke Blue Devils') [0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 398[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 399[0m
+  [4;36;1mPlayer Update (0.4ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 400[0m
+  [4;35;1mPlayer Update (0.4ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 402[0m
+  [4;36;1mPlayer Update (0.2ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 405[0m
+  [4;35;1mPlayer Update (0.4ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 406[0m
+  [4;36;1mPlayer Update (0.4ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 407[0m
+  [4;35;1mPlayer Update (0.3ms)[0m   [0mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 408[0m
+  [4;36;1mPlayer Update (0.3ms)[0m   [0;1mUPDATE "players" SET "updated_at" = '2011-03-16 00:12:08', "current" = 'f' WHERE "id" = 409[0m
+  [4;35;1mScore Load (0.6ms)[0m   [0mSELECT * FROM "scores" WHERE ("scores"."gameId" = '201103130413') [0m
+Rendering template within layouts/application
+Rendering scores/index
+Completed in 1259ms (View: 63, DB: 30) | 200 OK [http://localhost/scores/games/201103130413]
+
+
+Processing ScoresController#index (for 127.0.0.1 at 2011-03-15 19:12:14) [GET]
+  [4;36;1mScore Load (2.6ms)[0m   [0;1mSELECT * FROM "scores" [0m
+Rendering template within layouts/application
+Rendering scores/index
+Completed in 218ms (View: 211, DB: 3) | 200 OK [http://localhost/scores]
