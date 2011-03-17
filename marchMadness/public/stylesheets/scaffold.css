@@ -71,7 +71,7 @@ div.field, div.actions {
 .player-points{
   list-style: none;
   position: absolute;
-  left: 200px;
+  left: 250px;
   top: 0px;
 }
 
@@ -104,7 +104,7 @@ div.field, div.actions {
 
 .team-total {
   position: absolute;
-  left: 540px;
+  left: 590px;
   top: 0px;
 }
 
