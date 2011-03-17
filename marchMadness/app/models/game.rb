@@ -53,6 +53,7 @@ class Game
     doc.css('td a').each do |td|
       if td.text.include? 'Box Score'
         load td['href'].match(/[^0-9]*([0-9]*).*/)[1]
+        sleep 1
       end
     end
   end
